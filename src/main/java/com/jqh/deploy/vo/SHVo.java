@@ -7,5 +7,9 @@ package com.jqh.deploy.vo;
  * @Modified By:
  **/
 public class SHVo {
-    private String shPath = "/home/workspace/deploy/build_airesource_server.sh";
+    public static String shPath = "/home/workspace/deploy/build_airesource_server.sh";
+
+    public static String runPath = "/var/www/java/run-prod.sh";
+
+    public static String killPath = "/var/www/java/kill-prod.sh";
 }
