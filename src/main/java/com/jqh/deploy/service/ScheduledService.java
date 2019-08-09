@@ -10,21 +10,21 @@ import org.springframework.stereotype.Component;
 public class ScheduledService {
 
 
-    @Scheduled(cron = "0/60 * * * * *")
-    public void scheduled(){
-        System.out.println("start sceduled.....");
-        try {
-            if(!DeployUtils.checkRun()) {
-                System.out.println("start running.....");
-                DeployUtils.invokeSHForTime(SHVo.runPath);
-            } else {
-                System.out.println("no need start run.....");
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        System.out.println("stop sceduled.....");
-    }
+//    @Scheduled(cron = "0/60 * * * * *")
+//    public void scheduled(){
+//        System.out.println("start sceduled.....");
+//        try {
+//            if(!DeployUtils.checkRun()) {
+//                System.out.println("start running.....");
+//                DeployUtils.invokeSHForTime(SHVo.runPath);
+//            } else {
+//                System.out.println("no need start run.....");
+//            }
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        System.out.println("stop sceduled.....");
+//    }
 
 
 }
